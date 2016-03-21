@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- jQuery from CDN -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="js/app.js"></script>
 
+</script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
@@ -24,8 +27,12 @@
         <div class="col-md-12">
           <h1>Tic Tac Toe</h1>
           <hr>
+          <h2>Hello Friend. I wanna play a game. </h2>
+          <h3>Are you cunning enough to outsmart another person? Let's see!</h3>
         </div>
       </div>
+<br />
+<br />
       <div class="row">
 
         <!-- a column represents our game board -->
@@ -35,15 +42,52 @@
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
+            <div class="col-md-4 box"></div>
           </div>
 
 
-
+<table>
+  <tr>
+    <td class="item1"></td>
+    <td class="item2"></td>
+    <td class="item3"></td>
+  </tr>
+  <tr>
+    <td class="item4"></td>
+    <td class="item5"></td>
+    <td class="item6"></td>
+  </tr>
+  <tr>
+    <td class="item7"></td>
+    <td class="item8"></td>
+    <td class="item9>"></td>
+  </tr>
+</table>
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <button type="button" onclick="alert('The Galaxy is Yours! Rule Wisely and May the Force be with You') class="reset"> Wanna Play Again </button>
+    <br />
+    <br />
+    <br />
   </body>
 </html>

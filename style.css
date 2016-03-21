@@ -1,0 +1,32 @@
+#board {
+  margin-top: 10px;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+table {
+  width: auto;
+  margin: auto;
+}
+.box {
+  border: 1px solid black;
+  height: 150px;
+}
+button {
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: #a6a6a6;
+}
+button:hover {
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+.X {
+  background-image: url("black-squadron-x-wing.png");
+  background-size: cover;
+}
+.O {
+  background-image: url("Death_star1.png");
+  background-size: contain;
+}
