@@ -7,7 +7,12 @@ var playerOne = "X";
 var playerTwo = "O";
 var $boxes = $('.box');
 var turn = playerOne;
-
+var moves = 0;
+var getWinner = (playerOne || playerTwo);
+var resetGame = function () {
+  $boxes.removeClass ("X");
+  $boxes.removeClass ("O");
+};
 
 var changeTurn = function () {
   if (turn ==="X") {
@@ -18,7 +23,6 @@ var changeTurn = function () {
 };
 
 
-
 $ ('#reset').on('click', function () {
   resetGame();
 });
@@ -27,9 +31,8 @@ $boxes.on('click', function() {
     $(this).text (turn);
       changeTurn();
     $(this).addClass(turn);
-  }
-});
-/*
+    moves += 1;
+
 var winner = getWinner ();
 if (winner) {
   alert("Player " + winner + " won!");
@@ -40,5 +43,9 @@ if (winner) {
   alert("Tie Game!!!");
   resetGame ();
 }
-*/
+}
+
+});
+
+
 });

@@ -23,10 +23,10 @@ button:hover {
   text-transform: uppercase;
 }
 .X {
-  background-image: url("black-squadron-x-wing.png");
-  background-size: cover;
-}
-.O {
   background-image: url("Death_star1.png");
   background-size: contain;
+}
+.O {
+  background-image: url("black-squadron-x-wing.png");
+  background-size: contain;;
 }
